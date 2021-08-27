@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            function showtext(txt)
+            {
+                document.getElementById("desc").innerHTML=txt;
+            }
+        </script>
+        <img src ="img1.jpg" width ="700" height ="500" alt="Planets" usemap ="#imgmap" />
+        <map id ="imgmap" name="imgmap">
+            <!-- <area shape ="rect" coords ="0,0,82,126" -->
+            <area shape ="rect" coords ="165,43,658,491"
+            onMouseOver="showtext('This is rectangle.')" 
+            href ="" target ="_blank" alt="Sun" />
+
+            <area shape ="circle" coords ="103,85,38" 
+            onMouseOver = "showtext('This is circle')" 
+            href ="" target ="_blank" alt="Mercury" />
+        </map>
+        <p id="desc"></p>
+    </body>
+</html>
